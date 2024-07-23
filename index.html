@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+        <figure>
+            <img src="https://www.whatspaper.com/wp-content/uploads/2023/06/hd-gigachad-wallpaper-whatspaper-10-300x337.jpg" width="250" alt="Pria Sigma">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#origin">Origin</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <article>
+                <p>
+                    Halo, Saya Radit Restu Juniarko. Saya Pria Sigma. Hobi saya olahraga. Saya siswa di salah satu sekolah di kota Depok, yaitu SMK Taruna Bhakti.
+                </p>
+            </article>
+
+            <article id="about">
+                <h2>About</h2>
+                <p>
+                    <dfn>Radit Restu Juniarko</dfn>, juga dikenal sebagai <span class="block_merah">Sigma Male</span>.
+                </p>
+            </article>
+
+            <article id="origin">
+                <h2>Origin</h2>
+                <figure>
+                    <img src="https://example.com/your-image.jpg" alt="Image description">
+                </figure>
+                <p>
+                    Saya berasal dari <a href="https://id.wikipedia.org/wiki/Kabupaten_Klaten"><cite id="kota">Klaten</cite></a>, Jawa Tengah. Dan sekarang saya tinggal bersama orang tua saya di kota Depok.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <section id="form">
+            <h3>Form, isi sendiri</h3>
+            <form action="https://example.com/submit-form" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Input your name" name="Name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@mail.com" name="Email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="************" name="Password" minlength="8" required>
+                </div>
+                <div>
+                    <label for="number">Number</label>
+                    <input type="number" id="number" placeholder="Your phone number" name="Number" required>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <div>
+                <label for="userInput">Your Input:</label>
+                <textarea id="userInput" rows="4" cols="20"></textarea>
+            </div>
+        </section>
+        <p><cite>By: Mas Radit</cite></p>
+        <figure>
+            <figcaption>
+                <p><q>In the darkest of branches that protrude, remain white,<br>as in the worst of people, their hearts remain pure.</q></p>
+            </figcaption> 
+        </figure>
+    </footer>
+
+    <div id="likeContainer">
+        <div id="likeText">
+            Yang gak like sama gak follow akun IG, gak sigma
+            <div class="arrow"></div>
+        </div>
+        <button id="likeButton" class="heart">&#10084; <span id="likeCount">0</span></button>
+        <a href="https://www.instagram.com/rdt.r.j?utm_source=qr&igsh=N2NtY3drejl4OTBj" target="_blank" id="instagramLink">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
