@@ -158,49 +158,61 @@ footer textarea {
     color: #333;
 }
 
-/* Like Button Styles */
-#likeButton {
+/* Like Container Styles */
+#likeContainer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#likeText {
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-right: 1rem;
+}
+
+#likeText .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 0.5rem;
+    transform: translateY(-50%);
+}
+
+#likeButton {
+    padding: 0.75rem;
     border: none;
     background: #e74c3c;
     color: #fff;
     cursor: pointer;
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#likeButton:hover {
-    background: #c0392b;
-}
-
-#likeCount {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #fff;
-    color: #333;
-    border-radius: 50%;
-    padding: 0.3rem;
-    min-width: 1.5rem;
-    text-align: center;
+#likeButton span {
     font-size: 1rem;
-    font-weight: bold;
+    margin-left: 0.5rem;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+#instagramLink img {
+    width: 40px;
+    height: 40px;
 }
