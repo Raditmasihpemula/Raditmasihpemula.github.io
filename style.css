@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
     color: #333;
 }
 
@@ -19,11 +19,11 @@ p {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #555;
 }
 
 a:hover {
-    color: #467df3;
+    color: #000;
 }
 
 /* Header Styles */
@@ -32,6 +32,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
@@ -65,6 +66,8 @@ nav ul li a {
     max-width: 800px;
     margin: 1rem auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 article {
@@ -83,66 +86,21 @@ figure {
 figure img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-/* Sidebar/Aside Styles */
-aside {
-    padding: 1rem;
-    background: #f9f9f9;
-    margin-bottom: 2rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 0.5rem;
-    text-align: left;
-}
-
-th {
-    background: #f4f4f4;
-}
-
-/* Poem Section */
-.shadowbox {
-    border: 1px solid #ccc;
-    padding: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    background-color: #f9f9f9;
-}
-
-#poem h2 {
-    text-align: center;
-    color: #555;
-}
-
-#poem p {
-    text-align: center;
-    font-style: italic;
-    line-height: 1.8;
-    color: #444;
-}
-
-/* Form Styles */
+/* Footer Styles */
 footer {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 footer h3 {
     margin-top: 0;
-    color: brown;
+    color: #aaa;
 }
 
 footer form {
@@ -151,6 +109,7 @@ footer form {
     padding: 1rem;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 footer form div {
@@ -159,6 +118,7 @@ footer form div {
 
 footer form label {
     display: block;
+    color: #555;
 }
 
 footer form input,
@@ -174,7 +134,7 @@ footer form textarea {
 footer form button {
     padding: 0.5rem 1rem;
     border: none;
-    background: brown;
+    background: #555;
     color: #fff;
     cursor: pointer;
     border-radius: 4px;
@@ -191,45 +151,19 @@ footer textarea {
 
 /* Utility Classes */
 .block_merah {
-    color: red;
+    color: #e74c3c;
 }
 
-.ambaitem {
-    color: red;
+#kota {
+    color: #333;
 }
 
-.ambaitem:hover {
-    color: rgba(70, 125, 243, 0.747);
-}
-
-.phone {
-    font-weight: bold;
-}
-
-.Greenbg {
-    background-color: rgb(19, 205, 19);
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-figcaption::before,
-figcaption::after {
-    content: '"';
-    font-size: 35px;
-    font-style: italic;
-    font-weight: bold;
-
-}
-
-#ceprit{
-    display: flex;
-    justify-content: center;
-}
-
-#omaga{
-    display: flex;
-    justify-content: center;
-}
-
-#kota{
-    color: red;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
