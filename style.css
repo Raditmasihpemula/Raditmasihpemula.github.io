@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header figure {
+    margin: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Main Content Styles */
+#content {
+    padding: 1rem;
+    background: #fff;
+    max-width: 800px;
+    margin: 1rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer h3 {
+    margin-top: 0;
+    color: #aaa;
+}
+
+footer form {
+    margin: 1rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+footer form div {
+    margin-bottom: 1rem;
+}
+
+footer form label {
+    display: block;
+    color: #555;
+}
+
+footer form input,
+footer form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+footer form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer textarea {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.block_merah {
+    color: #e74c3c;
+}
+
+#kota {
+    color: #333;
+}
+
+/* Like Container Styles */
+#likeContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#likeText {
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-right: 1rem;
+}
+
+#likeText .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 0.5rem;
+    transform: translateY(-50%);
+}
+
+#likeButton {
+    padding: 0.75rem;
+    border: none;
+    background: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#likeButton span {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+#instagramLink img {
+    width: 40px;
+    height: 40px;
+}
